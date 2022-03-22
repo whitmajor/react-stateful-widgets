@@ -57,7 +57,7 @@ const [activeSquare, setActiveSquare] = useState(null)
           // Nasty bug! We should map over a slice of state, instead of 'listOfSquareIds'.
           // We might say: "it works, though!" But if the list of squares is not state,
           // we could never add squares, change squares or remove squares in the future. Fix!
-          Squares.map(id =>
+          square.map(id =>
             <div
               id={id}
               key={id}
